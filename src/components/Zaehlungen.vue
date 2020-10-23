@@ -10,13 +10,27 @@
       dense
       outlined
       prepend-inner-icon="mdi-magnify"
-      append-icon="mdi-information-outline"
       class="mt-5 px-4"
-    ></v-text-field>
+    >
+      <template v-slot:append>
+        <v-tooltip 
+        right
+        class="pl-5"
+        >
+          <template v-slot:activator="{on, attrs}">
+            <v-icon
+              v-bind="attrs"
+              v-on="on"
+            >mdi-information-outline</v-icon>
+          </template>
+          <span>Info zu Zaehlungen Suche</span>
+        </v-tooltip>
+      </template>
+    </v-text-field>
     <v-sheet
       width="100%"
       height="100%"
-      min-height="150"
+      min-height="100"
       color="transparent"
       class="overflow-y-auto"
     >
@@ -134,5 +148,9 @@ import Zaehlung from "@/components/Zaehlung.vue"
 })
 export default class Zaehlungen extends Vue {
   @Prop() height?: number
+
+  info() {
+    console.log("clicked info")
+  }
 }
 </script>

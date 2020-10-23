@@ -36,5 +36,4 @@ import ZaehlstelleView from './components/ZaehlstelleView.vue'
   }
 })
 export default class App extends Vue{}
-
 </script>

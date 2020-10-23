@@ -31,7 +31,9 @@
         ></zaehlungen>
       </v-col>
       <v-col cols="9">
-        <diagramme></diagramme>
+        <diagramme
+          :height="contentHeight"
+        ></diagramme>
       </v-col>
     </v-row>
   </v-container>
@@ -75,7 +77,7 @@ export default class ZaehlstelleView extends Vue {
     }
 
     get zaehlungenHeight() {
-      const h = this.$vuetify.breakpoint.height - this.appbarHeight - this.tabsHeight - this.zaehlstelleHeight - this.zaehlungInfoHeight - 15
+      const h = this.$vuetify.breakpoint.height - this.appbarHeight - this.tabsHeight - this.zaehlstelleHeight - this.zaehlungInfoHeight - 45
       console.log("zaehlungen -> " + h)
       return h
     }

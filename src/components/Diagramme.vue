@@ -25,13 +25,42 @@
       Zeitreihe
       <v-icon>mdi-chart-line</v-icon>
     </v-tab>
+
+    <v-tab-item>
+      <v-sheet
+        width="100%"
+        :height="height"
+        color="grey lighten-5"
+      >
+        <sample-chart></sample-chart>
+      </v-sheet>
+    </v-tab-item>
+    <v-tab-item>
+      Ganlinie
+    </v-tab-item>
+    <v-tab-item>
+      Tabelle
+    </v-tab-item>
+    <v-tab-item>
+      Heatmap
+    </v-tab-item>
+    <v-tab-item>
+      Zeitreihe
+    </v-tab-item>
   </v-tabs>
 </template>
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue, Prop } from 'vue-property-decorator'
 
-@Component
+// charts
+import SampleChart from "@/components/charts/SampleChart.vue"
+
+@Component({
+  components: {
+    SampleChart
+  }
+})
 export default class Diagramme extends Vue {
-    
+  @Prop() height?: number
 }
 </script>

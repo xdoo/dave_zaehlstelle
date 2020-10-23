@@ -54,16 +54,32 @@
         <v-row>
           <v-col cols="1"></v-col>
           <v-col>
-            <v-btn
-              small
-              color="orange darken-2"
-              class="white--text"
+            <v-dialog 
+              v-model="filter"
+              persistent
             >
-              <v-icon left>
-                mdi-filter-outline
-              </v-icon>
-              Daten Selektieren
-            </v-btn>
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn
+                  small
+                  color="orange darken-2"
+                  class="white--text"
+                  v-bind="attrs"
+                  v-on="on"
+                >
+                  <v-icon left>
+                    mdi-filter-outline
+                  </v-icon>
+                  Daten Selektieren
+                </v-btn>
+              </template>
+              <v-btn
+                text
+                color="orange darken-2"
+                @click="filter = false"
+              >
+                Schliessen
+              </v-btn>
+            </v-dialog>
           </v-col>          
         </v-row>
       </v-sheet>
@@ -76,11 +92,14 @@ import { Component, Vue } from 'vue-property-decorator'
 @Component
 export default class ZaehlungInfo extends Vue{
 
+  filter = false
+
   /**
    * Die Höhe des Elements ist dynamisch und muss deshalb
    * zur Laufzeit ermittelt werden.
    */
   mounted() {
+    console.log("Zaehlung-Info: " + this.$el.clientHeight)
     this.$emit("calc-height", this.$el.clientHeight)
   }
 

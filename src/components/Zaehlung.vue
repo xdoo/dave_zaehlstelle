@@ -4,6 +4,7 @@
     :color="color"
     outlined
     class="px-4 py-2"
+    @click="openZaehlung"
   >
     <span class="caption">{{datum}} | {{projektName}}</span><br/>
     <v-icon small color="black" class="mt-1 mr-2">{{zaehlart}}</v-icon>
@@ -24,5 +25,9 @@ export default class Zaehlung extends Vue {
   @Prop() zeit?: number
   @Prop() handZaehlung?: boolean
   @Prop() color?: string
+
+  openZaehlung() {
+    console.log("zaehlung")
+  }
 }
 </script>

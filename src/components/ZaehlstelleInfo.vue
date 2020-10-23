@@ -17,5 +17,9 @@ import { Component, Vue, Prop } from 'vue-property-decorator'
 @Component
 export default class ZaehlstelleInfo extends Vue {
   @Prop() height?: number
+
+  mounted() {
+    console.log("zaehlstellen-info: " + this.$el.clientHeight)
+  }
 }
 </script>
