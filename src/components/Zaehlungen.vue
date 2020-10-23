@@ -23,7 +23,7 @@
       <zaehlung
         datum="21.08.2017"
         projekt-name="VZ Irgendwas"
-        zaehlart="Q"
+        zaehlart="mdi-alpha-q-circle-outline"
         wetter="mdi-weather-rainy"
         zeit="24"
         hand-zaehlung
@@ -32,7 +32,7 @@
       <zaehlung
         datum="21.08.2017"
         projekt-name="VZ Irgendwas"
-        zaehlart="Q"
+        zaehlart="mdi-alpha-q-circle-outline"
         wetter="mdi-weather-rainy"
         zeit="24"
         hand-zaehlung
@@ -41,7 +41,7 @@
       <zaehlung
         datum="21.08.2017"
         projekt-name="VZ Irgendwas"
-        zaehlart="Q"
+        zaehlart="mdi-alpha-r-circle-outline"
         wetter="mdi-weather-rainy"
         zeit="24"
         hand-zaehlung
@@ -50,7 +50,7 @@
       <zaehlung
         datum="21.08.2017"
         projekt-name="VZ Irgendwas"
-        zaehlart="Q"
+        zaehlart="mdi-alpha-r-circle-outline"
         wetter="mdi-weather-rainy"
         zeit="24"
         hand-zaehlung
@@ -59,7 +59,7 @@
       <zaehlung
         datum="21.08.2017"
         projekt-name="VZ Irgendwas"
-        zaehlart="Q"
+        zaehlart="mdi-alpha-q-circle-outline"
         wetter="mdi-weather-rainy"
         zeit="24"
         hand-zaehlung
@@ -68,7 +68,7 @@
       <zaehlung
         datum="21.08.2017"
         projekt-name="VZ Irgendwas"
-        zaehlart="Q"
+        zaehlart="mdi-alpha-r-circle-outline"
         wetter="mdi-weather-rainy"
         zeit="24"
         hand-zaehlung
@@ -77,7 +77,7 @@
       <zaehlung
         datum="21.08.2017"
         projekt-name="VZ Irgendwas"
-        zaehlart="Q"
+        zaehlart="mdi-alpha-q-circle-outline"
         wetter="mdi-weather-rainy"
         zeit="24"
         hand-zaehlung
@@ -86,7 +86,7 @@
       <zaehlung
         datum="21.08.2017"
         projekt-name="VZ Irgendwas"
-        zaehlart="Q"
+        zaehlart="mdi-alpha-q-circle-outline"
         wetter="mdi-weather-rainy"
         zeit="24"
         hand-zaehlung
@@ -95,7 +95,7 @@
       <zaehlung
         datum="21.08.2017"
         projekt-name="VZ Irgendwas"
-        zaehlart="Q"
+        zaehlart="mdi-alpha-q-circle-outline"
         wetter="mdi-weather-rainy"
         zeit="24"
         hand-zaehlung
@@ -104,7 +104,7 @@
       <zaehlung
         datum="21.08.2017"
         projekt-name="VZ Irgendwas"
-        zaehlart="Q"
+        zaehlart="mdi-alpha-q-circle-outline"
         wetter="mdi-weather-rainy"
         zeit="24"
         hand-zaehlung
@@ -113,7 +113,7 @@
       <zaehlung
         datum="21.08.2017"
         projekt-name="VZ Irgendwas"
-        zaehlart="Q"
+        zaehlart="mdi-alpha-q-circle-outline"
         wetter="mdi-weather-rainy"
         zeit="24"
         hand-zaehlung

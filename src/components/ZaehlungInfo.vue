@@ -8,6 +8,7 @@
         class="px-4 py-2 white--text"
       >
         <span>22.10.2019 | VZ Baubergerstr.</span><br/>
+        <v-icon class="mt-2 mr-2" color="white">mdi-alpha-q-circle-outline</v-icon>
         <v-icon class="mt-2 mr-2" color="white">mdi-weather-snowy-heavy</v-icon>
         <v-icon class="mt-2 mr-2" color="white">mdi-hours-24</v-icon>
         <v-icon class="mt-2 mr-2" color="white">mdi-clipboard-account-outline</v-icon>

@@ -6,7 +6,7 @@
     class="px-4 py-2"
   >
     <span class="caption">{{datum}} | {{projektName}}</span><br/>
-    <span class="caption mt-1 mr-2">{{zaehlart}}</span>
+    <v-icon small color="black" class="mt-1 mr-2">{{zaehlart}}</v-icon>
     <v-icon small color="black" class="mt-1 mr-2">{{wetter}}</v-icon>
     <v-icon small color="black" class="mt-1 mr-2">mdi-hours-24</v-icon>
     <v-icon small color="black" class="mt-1 mr-2">mdi-clipboard-account-outline</v-icon>
