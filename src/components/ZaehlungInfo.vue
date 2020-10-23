@@ -73,5 +73,15 @@
 import { Component, Vue } from 'vue-property-decorator'
 
 @Component
-export default class ZaehlungInfo extends Vue{}
+export default class ZaehlungInfo extends Vue{
+
+  /**
+   * Die Höhe des Elements ist dynamisch und muss deshalb
+   * zur Laufzeit ermittelt werden.
+   */
+  mounted() {
+    this.$emit("calc-height", this.$el.clientHeight)
+  }
+
+}
 </script>

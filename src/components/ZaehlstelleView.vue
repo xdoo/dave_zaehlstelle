@@ -16,13 +16,19 @@
       <v-col
         cols="9"
       >
-        <zaehlstelle-map></zaehlstelle-map>
+        <zaehlstelle-map
+          height="170"
+        ></zaehlstelle-map>
       </v-col>
     </v-row>
     <v-row no-gutters>
       <v-col cols="3">
-        <zaehlung-info></zaehlung-info>
-        <zaehlungen></zaehlungen>
+        <zaehlung-info
+          v-on:calc-height="setZaehlungInfoHeight"
+        ></zaehlung-info>
+        <zaehlungen
+          :height="zaehlungenHeight"
+        ></zaehlungen>
       </v-col>
       <v-col cols="9">
         <diagramme></diagramme>
@@ -50,6 +56,29 @@ import Diagramme from "@/components/Diagramme.vue"
   }
 })
 export default class ZaehlstelleView extends Vue {
-    
+    appbarHeight = 64
+    tabsHeight = 72
+
+    zaehlstelleHeight  = 170
+    zaehlungInfoHeight = 250
+
+
+    setZaehlungInfoHeight(h: number) {
+      console.log(h)
+      this.zaehlungInfoHeight = h
+    }
+
+    get contentHeight() {
+       const h = this.$vuetify.breakpoint.height - this.appbarHeight - this.zaehlstelleHeight - this.tabsHeight
+       console.log("content -> " + h)
+       return h
+    }
+
+    get zaehlungenHeight() {
+      const h = this.$vuetify.breakpoint.height - this.appbarHeight - this.tabsHeight - this.zaehlstelleHeight - this.zaehlungInfoHeight - 15
+      console.log("zaehlungen -> " + h)
+      return h
+    }
+
 }
 </script>

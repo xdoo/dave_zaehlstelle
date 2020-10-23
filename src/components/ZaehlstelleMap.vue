@@ -1,6 +1,6 @@
 <template>
   <v-sheet
-    height="170"
+    :height="height"
     width="100%"
   >
     <l-map
@@ -41,10 +41,13 @@
   </v-sheet>
 </template>
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue, Prop } from 'vue-property-decorator'
 
 @Component
 export default class ZaehlstelleMap extends Vue{
+
+  @Prop() height?: number
+
   zoom = 17
   url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
   attribution = '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
